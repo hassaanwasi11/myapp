@@ -1,0 +1,15 @@
+@import url(//db.onlinewebfonts.com/c/8de2a914ce9551c6ce34ed0665a5917d?family=Eau+Douce);
+@font-face {
+  font-family: "Eau Douce";
+  src: url("//db.onlinewebfonts.com/t/8de2a914ce9551c6ce34ed0665a5917d.eot");
+  src: url("//db.onlinewebfonts.com/t/8de2a914ce9551c6ce34ed0665a5917d.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8de2a914ce9551c6ce34ed0665a5917d.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8de2a914ce9551c6ce34ed0665a5917d.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8de2a914ce9551c6ce34ed0665a5917d.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8de2a914ce9551c6ce34ed0665a5917d.svg#Eau Douce")
+      format("svg");
+}
