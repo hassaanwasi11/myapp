@@ -1256,5 +1256,11 @@ body {
       transform: translateY(0);
       transition: transform 0.1s, opacity 0.1s;
     }
+    body:not(:hover) #scroll-down {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition: transform 0.5s, opacity 0.5s;
+      }
   }
   

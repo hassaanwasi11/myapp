@@ -26,7 +26,7 @@ import Partner from '../Partner/Partner'
 const Landing = () => {
 
   const { ref } = useParallax({ speed: 1 });
-  const [asds, setasds] = useState(70)
+  const [asds, setasds] = useState(123)
   const [widthtop, setwidthtop] = useState('80%')
   const [videowidth, setvideowidth] = useState('40%')
   const [opacity, setopacity] = useState('0')
@@ -38,8 +38,8 @@ const Landing = () => {
   const [topx, settopx] = useState('0px')
   const [topx2, settopx2] = useState('0px')
   function animate() {
-    setasds(Math.random()*2)
-    setasds(Math.random()*2)
+    setasds(Math.random()*3)
+    setasds(Math.random()*3)
     if (window.innerWidth > 795) {
       let elem4 = document.getElementById("nextsec");
       let rect4 = elem4.getBoundingClientRect();
@@ -60,20 +60,20 @@ const Landing = () => {
       console.log(rect9.y)
       if (rect9.y > 0 && rect9.y < 3200) {
 
-        settopx((-rect9.y / 20).toString() + 'px')
+        settopx((-rect9.y / 50).toString() + 'px')
 
-        settopx2((rect9.y / 20).toString() + 'px')
+        settopx2((rect9.y / 50).toString() + 'px')
       }
       if (rectx1.y < window.innerWidth && rectx1.y > 0) {
 
-        settop((150 + rectx1.y / 3).toString() + 'px')
+        settop((150 + rectx1.y / 5).toString() + 'px')
       }
       if (rectx.y < window.innerWidth && rectx.y > 0) {
 
-        setmarginleft((rectx.y / 20).toString() + 'vw')
+        setmarginleft((rectx.y / 50).toString() + 'vw')
       }
 
-      setheight(100 - (rect9.y / 9000) * 100)
+      setheight(100 - (rect9.y / 9000) * 200)
       let elem5 = document.getElementById("video");
       let rect5 = elem5.getBoundingClientRect();
 
@@ -376,15 +376,15 @@ const Landing = () => {
 
         </div>
 
-        <div className="slide2" >
+        {/* <div className="slide2" >
 
-        </div>
+        </div> */}
         <div className="slide3" id='subslide3'>
 
         </div>
-        <div className="slide2" >
+        {/* <div className="slide2" >
 
-        </div>
+        </div> */}
         <div className="slide4">
 
           <div className="contact">
