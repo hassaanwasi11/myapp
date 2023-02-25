@@ -25,7 +25,7 @@ import Header from '../Header/Header'
 import Partner from '../Partner/Partner'
 const Landing = () => {
 
-  const { ref } = useParallax({ speed: 1 });
+  const { ref } = useParallax({ speed: 1000 });
   const [asds, setasds] = useState(123)
   const [widthtop, setwidthtop] = useState('80%')
   const [videowidth, setvideowidth] = useState('40%')
@@ -204,19 +204,19 @@ const Landing = () => {
           </div> */}
           <div className="psectionscroll">
             <div className="sectionscroll">
-              {data2.map(val => (
-          
-                  <div className="support supportx" key={val.heading}>
-                    <div className="iconcircle">
-                      <img src={val.img} alt="" />
-                    </div>
-                    <h1>{val.heading}</h1>
-                    <p>{val.para}</p>
-                  </div>
-    
-              ))
+            <div >
+                {data2.map(val => (
+                        <div className="support supportx " id='support' key={val.heading}>
+                            <div className="iconcircle">
+                                <img src={val.img} alt="" />
+                            </div>
+                            <h1>{val.heading}</h1>
+                            <p>{val.para}</p>
+                        </div>
+                ))
 
-              }
+                }
+            </div>
 
             </div>
           </div>

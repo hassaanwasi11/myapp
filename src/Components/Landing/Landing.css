@@ -29,7 +29,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   animation-name: exampleaa;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
 }
 
 .scrolldivs {
@@ -759,7 +759,7 @@ margin: 10px;
 
 .psectionscroll {
     padding-right: 30px;
-    overflow: scroll;
+    overflow: auto;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -770,7 +770,7 @@ margin: 10px;
 .supportx {
     background: rgba(219, 160, 248, 0.15) !important;
     border: 1px solid rgba(125, 62, 245, 0.4) !important;
-    backdrop-filter: blur(10px) !important;
+   
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 16px;
@@ -780,7 +780,7 @@ margin: 10px;
 .sectionscroll {
     width: max-content;
     height: max-content;
-    display: flex;
+    
     align-items: flex-end;
     flex-direction: column;
 }
@@ -1246,8 +1246,8 @@ body {
     
     html {
       scroll-behavior: auto;
-      scroll-padding-top: 1px;
-      scroll-padding-bottom: 1px;
+      scroll-padding-top: 10px;
+      scroll-padding-bottom: 10px;
     }
     
     body:not(:hover) #scroll-up {
@@ -1260,7 +1260,7 @@ body {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-        transition: transform 0.5s, opacity 0.5s;
+        transition: transform 0.1s, opacity 0.1s;
       }
   }
   
