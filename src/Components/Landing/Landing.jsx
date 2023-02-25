@@ -203,7 +203,7 @@ const Landing = () => {
 
           </div> */}
           <div className="psectionscroll">
-            <div className="sectionscroll">
+            <div>
             <div >
                 {data2.map(val => (
                         <div className="support supportx " id='support' key={val.heading}>
